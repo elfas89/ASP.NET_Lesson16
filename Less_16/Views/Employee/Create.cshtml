@@ -1,0 +1,30 @@
+﻿@model Less_16.Models.Employee
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+        <h2>Новый человек</h2>
+        @using (Html.BeginForm())
+        {
+            @Html.LabelFor(m => m.Name, "Имя")<br />
+            @Html.EditorFor(m => m.Name)<br />
+            @Html.LabelFor(m => m.Age, "Лет")<br />
+            @Html.EditorFor(m => m.Age)<br />
+            @Html.LabelFor(m => m.Post, "Пост")<br />
+            @Html.EditorFor(m => m.Post)<br />
+            <input type="submit" value="Добавить" />
+        }
+
+
+
+</body>
+</html>

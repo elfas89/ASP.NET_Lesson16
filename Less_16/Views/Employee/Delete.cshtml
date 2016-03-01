@@ -1,0 +1,31 @@
+﻿@model Less_16.Models.Employee
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+
+
+    <h2>Точно удалить чела?</h2>
+    <dl>
+
+        @Html.DisplayFor(model => model.Name)
+        @Html.DisplayFor(model => model.Age)
+        @Html.DisplayFor(model => model.Post)
+
+    </dl>
+    @using (Html.BeginForm())
+    
+    { <input type="submit" value="Удалить" /> }
+
+
+</body>
+</html>
